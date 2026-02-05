@@ -1,15 +1,14 @@
-module pipeline_check #( parameter width = 8 )
-  (
+module pipeline_check (
     input logic clk,
     input logic rst,
     input logic in_valid,
     output logic in_ready,
-    input logic [width-1:0]data_in,
+  input logic [31:0]data_in,
     output logic out_valid,
     input  logic out_ready,
-    output logic [width-1:0]data_out
+  output logic [31:0]data_out
 );
-   logic [width-1:0] data_q;
+  logic [31:0] data_q;
   
    logic full;
    assign in_ready = !full || out_ready;
