@@ -17,6 +17,9 @@ The design is verified using a SystemVerilog testbench. Simulation waveform conf
 Waveform screenshot is included in this repository to demonstrate correct operation.
 
 
+![Waveform](waveform.png)
+
+
 ## Files
 - `pipeline_check.sv` → RTL design
 - `testbench.sv` → Verification testbench
