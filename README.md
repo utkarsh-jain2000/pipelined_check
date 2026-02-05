@@ -25,5 +25,3 @@ Waveform screenshot is included in this repository to demonstrate correct operat
 - `testbench.sv` → Verification testbench
 - Waveform screenshot → Simulation result
 
-## Author
-Utkarsh Jain
