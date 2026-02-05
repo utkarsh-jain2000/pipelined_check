@@ -1,17 +1,14 @@
 module tb;
-
-    parameter width = 8;
-
     logic clk;
     logic rst;
     logic in_valid;
     logic in_ready;
-    logic [width-1:0] data_in;
+    logic [31:0] data_in;
     logic out_valid;
     logic out_ready;
-    logic [width-1:0] data_out;
+  logic [31:0] data_out;
   
-    pipeline_check #(width) dut (
+    pipeline_check dut (
         .clk(clk),
         .rst(rst),
         .in_valid(in_valid),
